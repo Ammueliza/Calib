@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  font-family: Roboto;
+}
+body {
+  width: 100%;
+  background: linear-gradient(to left top, teal, white);
+  overflow: hidden;
+
+}
+
+div{
+  background-color: white;
+  border: 1px solid gray;
+  width: 40%;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%; 
+  transform: translate(-50%, -50%);
+  margin: 8px;
+  padding-bottom: 32px;
+}
+
+input {
+  margin: 5px;
+  height: 32px;
+}
+
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* show a hand cursor on hover; some argue that we
+  should keep the default arrow cursor for buttons */
+  cursor: pointer;
+
+  /* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: auto;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: #ffffff;
+  background-color:teal;
+}
+
+button:active {
+  transform: translateY(1px);
+      border-color: teal;
+
+}
+
+button:hover {
+  color: teal;
+  border-color: teal;
+  background-color: white;
+}
