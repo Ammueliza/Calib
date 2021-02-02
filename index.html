@@ -10,15 +10,25 @@
   />
 </head>
 <body>
-  <div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="txjlbkmC"></script>
+  <div class="container">
     <h4>Z Difference for one rotation</h4>
-    <input type="number" />
+    <input type="number" id="x3y3" />
     <h4>Current Readings</h4>
-    <input type="number" />
-    <input type="number" />
-    <br />
-    <input type="number" />
-    <input type="number" />
+    <div class="input-readings">
+      <label for="x0y1">(x0,y1)</label>
+      <input type="number" />
+      <label for="x1y1">(x1,y1)</label>
+      <input type="number" />
+      <br />
+      <h4>Bed</h4>
+      <br />
+      <label for="x1y0">(x1,y0)</label>
+      <input type="number" />
+      <label for="x0y0">(x0,y0)</label>
+      <input type="number" />
+    </div>
     <h4>Target Value</h4>
     <input type="number" />
     <button>Calculate</button>
@@ -29,4 +39,14 @@
     <input type="number" />
     <input type="number" />
   </div>
+    <div class="fb-share-button" 
+         data-href="https://developers.facebook.com/docs/plugins/" 
+         data-layout="button_count" 
+         data-size="small">
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+            Share
+        </a>
+        </div>
+
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="check this" data-url="https://stackoverflow.com/users" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
